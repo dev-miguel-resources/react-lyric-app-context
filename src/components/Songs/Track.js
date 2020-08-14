@@ -12,20 +12,19 @@ const Track = ({ commontrack_id, track_name, album_name, artist_name }) => (
             <ul>
                 <li>
                     <img alt="track" src={ track } />
-                    <strong>Track:</strong>
+                    <strong>Track: </strong>
                     <span>{ track_name }</span>
                 </li>
                 <li>
                     <img alt="album" src={ album } />
-                    <strong>Album:</strong>
+                    <strong>Album: </strong>
                     <span>{ album_name }</span>
                 </li>
                 <li>
-                    <ButtonPrimary type="lyrics" to={`/lyrics/track/${ commontrack_id }`} />
+                    <ButtonPrimary type="lyrics" to={ `/lyrics/track/${ commontrack_id }` } />
                 </li>
             </ul>
         </Paper>
-
     </Grid>
 );
 
